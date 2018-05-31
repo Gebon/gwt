@@ -198,6 +198,11 @@
 <!ATTLIST when-type-is
 	class CDATA #REQUIRED
 >
+<!-- Deferred binding predicate that is true when there are linker with such name -->
+<!ELEMENT when-linker-added EMPTY>
+<!ATTLIST when-linker-added
+	name CDATA #REQUIRED
+>
 <!-- Predicate that ANDs all child conditions -->
 <!ELEMENT all (%predicates;)*>
 <!-- Predicate that ORs all child conditions -->
